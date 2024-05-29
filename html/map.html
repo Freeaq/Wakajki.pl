@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/znacznik_map.css">
+</head>
+<body>
+    <section>
+        <img class="bg-image" src="../main_photo/main.png" alt="BG">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Nasze Najpiękniejsze plaże</h2>
+            <figure>
+                <img src="../znacznik_map/znacznik_map.png" name="Map" usemap="#MapAreas" />
+                <map name="MapAreas">
+
+                    <area shape="poly" coords="32,918,125,896,190,969,194,1052,25,1053,102,1055,25,983" href="javascript:alert('Wyspa')"
+                        target="_self" />
+
+                    <area shape="poly" coords="384,453,418,430,453,437,480,461,519,452,555,428,578,440,574,477,554,498,528,518,519,544,532,573,531,611,491,611,477,579,460,541,442,517,423,504,400,481" href="javascript:alert('Oczko Wodne')"
+                        target="_self" />
+
+                    <area shape="poly" coords="1048,148,1011,187,982,236,956,266,912,324,877,367,850,412,833,461,831,492,813,535,794,578,775,619,757,654,735,688,703,736,657,801,614,819,574,809,528,784,476,753,451,717,427,696,378,661,354,636,318,605,275,586,252,565,229,527,209,498,188,470,170,433,159,394,152,355,143,314,138,274,140,206,119,163,43,93,85,107,103,131,27,133,54,148,70,182,80,214,87,259,87,295,92,348,110,396,125,438,139,480,165,514,181,566,197,602,218,624,241,646,264,671,293,711,328,742,358,782,379,813,411,874,414,906,436,955,477,993,537,1010,591,983,627,951,706,921,767,869,796,815,815,778,827,740,842,716,856,683,861,636,863,604,875,571,891,534,902,502,918,462,933,433,955,405,978,374,1007,346,1029,315,1054,282" href="javascript:alert('Plaża w Łebie')"
+                        target="_self" />
+
+                    <area shape="poly" coords="912,809,945,789,985,846,957,869"  href="javascript:alert('Łódź')"
+                        target="_self" />
+
+                    <area shape="poly" coords="555,222,574,236,592,219,613,229,632,245,653,220,630,210,610,199,592,185,575,202" href="noclegi.html"
+                        target="_self" />
+                </map>
+            </figure>
+        </div>
+
+        <script src="../javascript/znacznik_map.js"></script>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Wakajki.pl</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbar-modal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <input type="checkbox" name="toggle-menu" id="toggle-menu">
+                <label for="toggle-menu" type="button" class="toggle-btn">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </label>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Strona główna</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="noclegi.html">Noclegi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="map.html">Mapa kurortów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="opinie.html">Opinie klientów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="zaloguj.html">Zaloguj się</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Informacje dodatkowe
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="prezentacja.html">Prezentacja naszych hoteli</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pocztowka.html">Narysuj pocztówkę</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="regulamin.html">Regulamin serwisu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+      <div class="modal fade" data-bs-backdrop="static" id="navbar-modal" tabindex="-1" role="dialog" aria-labelledby="navbar-modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header1"></div>
+            <div class="modal-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="noclegi.html">Noclegi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="map.html">Mapa kurortów</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="opinie.html">Opinie klientów</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zaloguj.html">Zaloguj się</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Informacje dodatkowe
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="prezentacja.html">Prezentacja naszych hoteli</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pocztowka.html">Narysuj pocztówkę</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="regulamin.html">Regulamin serwisu</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Informacje</h5>
+            <p>
+              Wakajki.pl<br>
+              Twoje miejsce na wymarzone wakacje!<br>
+              <br>
+              Kontakt:<br>
+              Email: milosz.borowczyk@put.poznan.pl<br>
+              Telefon: +48 660 106 275<br>
+              <Br>
+              Adres:<br>
+              Wakajki.pl Sp. z o.o.<br>
+              ul. Andrzeja Sobczaka 1<Br>
+              61-001 Poznań <br>
+              <Br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <a class="text-body" style='text-decoration: none;'>Projekt strony internetowej wykonany w ramach
+          zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka przez Miłosz Borowczyk</a>
+      </div>
+    </footer>
+</body>
+</html>

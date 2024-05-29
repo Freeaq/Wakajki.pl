@@ -1,0 +1,38 @@
+
+section {
+    height: auto;
+}
+
+h3{
+    padding-top: 10%;
+}
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 16px; 
+        padding-top: 20%; 
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    h3 {
+        font-size: 18px; 
+        padding-top: 15%; 
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    h3 {
+        font-size: 20px;
+        padding-top: 10%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    h3 {
+        font-size: 24px;
+        padding-top: 5%; 
+    }
+}

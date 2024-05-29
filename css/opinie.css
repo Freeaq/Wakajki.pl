@@ -1,0 +1,48 @@
+section{
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow-x: auto;
+    width: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.5rem; 
+}
+
+
+th{
+    background-color: rgba(0, 255, 234, 0.445);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 0.4rem; 
+    font-size: 0.8rem; 
+  }
+  section{
+    padding-top: 25%;
+    padding-bottom: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .table th, .table td {
+    padding: 0.2rem; 
+    font-size: 0.7rem; 
+  }
+  section{
+  padding-top: 25%;
+  padding-bottom: 20%;
+}
+}

@@ -1,0 +1,26 @@
+section {
+    height: auto;
+    text-align: center; 
+}
+
+h2 {
+    padding-top: 10%;
+}
+
+figure {
+    display: inline-block; 
+    margin: 0 auto; 
+}
+
+figure img {
+    max-width: 70%; 
+    height: auto; 
+    object-fit: contain;
+    padding-bottom: 10%;
+}
+
+@media (max-width: 767px) {
+    figure img {
+        max-width: 70%; 
+    }
+}

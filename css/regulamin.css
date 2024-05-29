@@ -1,0 +1,37 @@
+section{
+    height: auto;
+    padding-bottom: 5%;
+}
+li{
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 16px; 
+        padding-top: 20%; 
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    h2 {
+        font-size: 18px; 
+        padding-top: 15%; 
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    h2 {
+        font-size: 20px; 
+        padding-top: 10%; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 24px; 
+        padding-top: 10%;
+    }
+}
